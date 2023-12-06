@@ -25,7 +25,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 
 // Owner
 global.owner = [
-  ['6285788840231'],
+  ['6283844253976'],
   ['6282181627816'],
   ['6285788840231', 'Zhar', 'alzharmuhammad12@gmail.com', true]
 ] // Put your number here
