@@ -1,0 +1,97 @@
+let handler = async (m, { conn, usedPrefix, command }) => {
+    let thumb = 'https://telegra.ph/file/76ee3481c92b6e7132621.jpg'
+    await conn.sendFile(m.chat, thumb, 'galau.jpg', `${pickRandom(global.galau)}`, m)
+    conn.sendFile(m.chat, './mp3/sadboy.mp3', '', null, m, true, { type: "audioMessage", ptt: true, fileLength: 88738 })
+}
+handler.help = ['galau']
+handler.tags = ['quotes']
+handler.command = /^(galau)$/i
+
+module.exports = handler
+
+function pickRandom(list) {
+    return list[Math.floor(list.length * Math.random())]
+}
+
+global.galau = [
+    "Gak salah kalo aku lebih berharap sama orang yang lebih pasti tanpa khianati janji-janji  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kalau aku memang tidak sayang sama kamu ngapain aku mikirin kamu. Tapi semuanya kamu yang ngganggap aku gak sayang sama kamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jangan iri dan sedih jika kamu tidak memiliki kemampuan seperti yang orang miliki. Yakinlah orang lain juga tidak memiliki kemampuan sepertimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Hanya kamu yang bisa membuat langkahku terhenti, sambil berkata dalam hati mana bisa aku meninggalkanmu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tetap tersenyum walauku masih dibuat menunggu dan rindu olehmu, tapi itu demi kamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tak semudah itu melupakanmu",
+    "Secuek-cueknya kamu ke aku, aku tetap sayang sama kamu karena kamu telah menerima aku apa adanya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku sangat bahagia jika kamu bahagia didekatku, bukan didekatnya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jadilah diri sendiri, jangan mengikuti orang lain, tetapi tidak sanggup untuk menjalaninya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Cobalah terdiam sejenak untuk memikirkan bagaimana caranya agar kita dapat menyelesaikan masalah ini bersama-sama  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Bisakah kita tidak bermusuhan setelah berpisah, aku mau kita seperti dulu sebelum kita jadian yang seru-seruan bareng, bercanda dan yang lainnya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku ingin kamu bisa langgeng sama aku dan yang aku harapkan kamu bisa jadi jodohku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Cinta tak bisa dijelaskan dengan kata-kata saja, karena cinta hanya mampu dirasakan oleh hati  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Masalah terbesar dalam diri seseorang adalah tak sanggup melawan rasa takutnya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Selamat pagi buat orang yang aku sayang dan orang yang membenciku, semoga hari ini hari yang lebih baik daripada hari kemarin buat aku dan kamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jangan menyerah dengan keadaanmu sekarang, optimis karena optimislah yang bikin kita kuat  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kepada pria yang selalu ada di doaku aku mencintaimu dengan tulus apa adanya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tolong jangan pergi saat aku sudah sangat sayang padamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Coba kamu yang berada diposisiku, lalu kamu ditinggalin gitu aja sama orang yang lo sayang banget  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku takut kamu kenapa-napa, aku panik jika kamu sakit, itu karena aku cinta dan sayang padamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Sakit itu ketika cinta yang aku beri tidak kamu hargai  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kamu tiba-tiba berubah tanpa sebab tapi jika memang ada sebabnya kamu berubah tolong katakan biar saya perbaiki kesalahan itu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Karenamu aku jadi tau cinta yang sesungguhnya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Senyum manismu sangatlah indah, jadi janganlah sampai kamu bersedih  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Berawal dari kenalan, bercanda bareng, ejek-ejekan kemudian berubah menjadi suka, nyaman dan akhirnya saling sayang dan mencintai  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tersenyumlah pada orang yang telah menyakitimu agar sia tau arti kesabaran yang luar biasa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku akan ingat kenangan pahit itu dan aku akan jadikan pelajaran untuk masa depan yang manis  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kalau memang tak sanggup menepati janjimu itu setidaknya kamu ingat dan usahakan jagan membiarkan janjimu itu sampai kau lupa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Hanya bisa diam dan berfikir Kenapa orang yang setia dan baik ditinggalin yang nakal dikejar-kejar giliran ditinggalin bilangnya laki-laki itu semuanya sama  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Walaupun hanya sesaat saja kau membahagiakanku tapi rasa bahagia yang dia tidak cepat dilupakan  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku tak menyangka kamu pergi dan melupakan ku begitu cepat  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jomblo gak usah diam rumah mumpung malam minggu ya keluar jalan lah kan jomblo bebas bisa dekat sama siapapun pacar orang mantan sahabat bahkan sendiri atau bareng setan pun bisa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kamu adalah teman yang selalu di sampingku dalam keadaan senang maupun susah Terimakasih kamu selalu ada di sampingku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku tak tahu sebenarnya di dalam hatimu itu ada aku atau dia  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tak mudah melupakanmu karena aku sangat mencintaimu meskipun engkau telah menyakiti aku berkali-kali  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Hidup ini hanya sebentar jadi lepaskan saja mereka yang menyakitimu Sayangi Mereka yang peduli padamu dan perjuangan mereka yang berarti bagimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tolong jangan pergi meninggalkanku aku masih sangat mencintai dan menyayangimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Saya mencintaimu dan menyayangimu jadi tolong jangan engkau pergi dan meninggalkan ku sendiri  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Saya sudah cukup tahu bagaimana sifatmu itu kamu hanya dapat memberikan harapan palsu kepadaku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku berusaha mendapatkan cinta darimu tetapi Kamunya nggak peka  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku bangkit dari jatuh ku setelah kau jatuhkan aku dan aku akan memulainya lagi dari awal Tanpamu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Mungkin sekarang jodohku masih jauh dan belum bisa aku dapat tapi aku yakin jodoh itu Takkan kemana-mana dan akan ku dapatkan  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Datang aja dulu baru menghina orang lain kalau memang dirimu dan lebih baik dari yang kau hina  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Membelakanginya mungkin lebih baik daripada melihatnya selingkuh didepan mata sendiri  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Bisakah hatimu seperti angsa yang hanya setia pada satu orang saja  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku berdiri disini sendiri menunggu kehadiran dirimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku hanya tersenyum padamu setelah kau menyakitiku agar kamu tahu arti kesabaran  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Maaf aku lupa ternyata aku bukan siapa-siapa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Untuk memegang janjimu itu harus ada buktinya jangan sampai hanya janji palsu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku tidak bisa selamanya menunggu dan kini aku menjadi ragu Apakah kamu masih mencintaiku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jangan buat aku terlalu berharap jika kamu tidak menginginkanku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Lebih baik sendiri daripada berdua tapi tanpa kepastian  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Pergi bukan berarti berhenti mencintai tapi kecewa dan lelah karena harus berjuang sendiri  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Bukannya aku tidak ingin menjadi pacarmu Aku hanya ingin dipersatukan dengan cara yang benar  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Akan ada saatnya kok aku akan benar-benar lupa dan tidak memikirkan mu lagi  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kenapa harus jatuh cinta kepada orang yang tak bisa dimiliki  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jujur aku juga memiliki perasaan terhadapmu dan tidak bisa menolakmu tapi aku juga takut untuk mencintaimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Maafkan aku sayang tidak bisa menjadi seperti yang kamu mau  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jangan memberi perhatian lebih seperti itu cukup biasa saja tanpa perlu menimbulkan rasa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku bukan mencari yang sempurna tapi yang terbaik untukku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Sendiri itu tenang tidak ada pertengkaran kebohongan dan banyak aturan  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Cewek strong itu adalah yang sabar dan tetap tersenyum meskipun dalam keadaan terluka  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Terima kasih karena kamu aku menjadi lupa tentang masa laluku  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Cerita cinta indah tanpa masalah itu hanya di dunia dongeng saja  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Kamu tidak akan menemukan apa-apa di masa lalu Yang ada hanyalah penyesalan dan sakit hati  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Mikirin orang yang gak pernah mikirin kita itu emang bikin gila  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Dari sekian lama menunggu apa yang sudah didapat  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Perasaan Bodo gue adalah bisa jatuh cinta sama orang yang sama meski udah disakiti berkali-kali  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Yang sendiri adalah yang bersabar menunggu pasangan sejatinya  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku terlahir sederhana dan ditinggal sudah biasa  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku sayang kamu tapi aku masih takut untuk mencintaimu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Bisa berbagi suka dan duka bersamamu itu sudah membuatku bahagia  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku tidak pernah berpikir kamu akan menjadi yang sementara  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jodoh itu bukan seberapa dekat kamu dengannya tapi seberapa yakin kamu dengan Allah  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Jangan paksa aku menjadi orang seperti seleramu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Hanya yang sabar yang mampu melewati semua kekecewaan  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Balikan sama kamu itu sama saja bunuh diri dan melukai perasaan ku sendiri  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Tak perlu membalas dengan menyakiti biar Karma yang akan urus semua itu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Aku masih ingat kamu tapi perasaanku sudah tidak sakit seperti dulu  @𝙳𝙴𝚅𝙸𝙽𝙴☂︎",
+    "Punya kalimat sendiri & mau ditambahin? chat *.owner*"
+]
